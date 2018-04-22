@@ -3,6 +3,11 @@
 #About
 - this project to present example how Google Flutter can Deal well with Arabic Diacritics
 
+![ios](ios.png)
+
+![Android](Android.png)
+
+![Code](CodeSample.png)
 
 ## Getting Started
 
