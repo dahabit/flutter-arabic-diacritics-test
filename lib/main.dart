@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(new MaterialApp(
+    theme: new ThemeData(fontFamily: 'KFGQPC Uthmanic Script HAFS'),
     home: new MyApp(),
   ));
 }
@@ -14,20 +15,20 @@ class MyApp extends StatelessWidget {
         title: new Text('بسم الله الرحمن الرحيم'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(10.0),
         child: Column(
           children: <Widget>[
             new Center(
                 child: Padding(
-              padding: const EdgeInsets.fromLTRB(10.0, 80.0, 10.0, 10.0),
+                padding: const EdgeInsets.fromLTRB(2.0, 80.0, 2.0, 10.0),
               child: new Text( //Arabic Diacritics From Quran
-                'لِلْفُقَرَاءِ الَّذِينَ أُحْصِرُوا فِي سَبِيلِ اللَّهِ لا يَسْتَطِيعُونَ ضَرْبًا فِي الأَرْضِ يَحْسَبُهُمُ الْجَاهِلُ أَغْنِيَاءَ مِنَ التَّعَفُّفِ تَعْرِفُهُمْ بِسِيمَاهُمْ لا يَسْأَلُونَ النَّاسَ إِلْحَافًا وَمَا تُنْفِقُوا مِنْ خَيْرٍ فَإِنَّ اللَّهَ بِهِ عَلِيمٌ (273)', // Arabic Text with diacritics
-                textDirection: TextDirection.rtl,
+                'يَسۡ‍َٔلُونَ', // Arabic Text with diacritics
                 textAlign: TextAlign.center,
+                textDirection: TextDirection.rtl,
                 style: new TextStyle(
-                  fontSize: 25.0,
-                  color: Colors.blueAccent,
-                  fontFamily: 'KFGQPC Uthmanic Script HAFS',
+                  fontSize: 50.0,
+                  color: Colors.redAccent,
+                  fontFamily:   'KFGQPC Uthmanic Script HAFS',
                 ),
               ),
             )),
@@ -37,3 +38,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
+//'لِلۡفُقَرَآءِ ٱلَّذِينَ أُحۡصِرُواْ فِي سَبِيلِ ٱللَّهِ لَا يَسۡتَطِيعُونَ ضَرۡبٗا فِي ٱلۡأَرۡضِ يَحۡسَبُهُمُ ٱلۡجَاهِلُ أَغۡنِيَآءَ مِنَ ٱلتَّعَفُّفِ تَعۡرِفُهُم بِسِيمَٰهُمۡ لَا يَسۡ‍َٔلُونَ ٱلنَّاسَ إِلۡحَافٗاۗ وَمَا تُنفِقُواْ مِنۡ خَيۡرٖ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٌ', // Arabic Text with diacritics
